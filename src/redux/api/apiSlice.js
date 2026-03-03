@@ -64,10 +64,9 @@ export const api = createApi({
     // Auth
     login: builder.mutation({
       query: (credentials) => ({
-      url: '/login',
+      url: `${baseURL}/login`,
       method: 'POST',
       body: credentials,
-      baseUrl: `${baseURL}`,
       }),
     }),
     
